@@ -20,3 +20,9 @@ module.exports = removeFromArray;
 //1. if includes() returns true, the element will be removed.
 //2. if includes() returns false, the element will not be removed.
 //3. use filter() to return a new array with the elements that do not match the condition.
+
+//Takeaways from Exercise
+//--rest parameter allows unknown quantity of arguments to be passed.
+//e.g. in this case, allows testing to check each time without changing code
+//--arguments can be accessed through index of the arguments array
+//--for loop iterates through each argument
