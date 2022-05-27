@@ -1,16 +1,28 @@
 const sumAll = function (arg1, arg2) {
   let array = [];
   let sum;
-  if (arg1 > 0 && arg1 < arg2) {
+  if (
+    arg1 > 0 &&
+    arg1 < arg2 &&
+    typeof arg1 === 'number' &&
+    typeof arg2 === 'number'
+  ) {
     for (let i = arg1; i <= arg2; i++) {
       array.push(arg1++);
       console.log(array);
     }
-  } else if(arg2 > 0 && arg2 < arg1) {
+  } else if (
+    arg2 > 0 &&
+    arg2 < arg1 &&
+    typeof arg1 === 'number' &&
+    typeof arg2 === 'number'
+  ) {
     for (let i = arg2; i <= arg1; i++) {
       array.push(arg2++);
       console.log(array);
     }
+  } else {
+    return 'ERROR';
   }
   sum = array.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
